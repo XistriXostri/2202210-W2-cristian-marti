@@ -28,7 +28,8 @@ footer {
     align-items: center;
 }
 
-h1 {
+h1,
+body > div > p {
     margin-left: 1rem;
     font-weight: bold;
     font-size: 1.75rem;
@@ -39,7 +40,8 @@ nav {
     margin-left: auto;
 }
 
-p {
+p,
+label {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -113,7 +115,7 @@ body > div > div div:last-child p:last-child {
     font-weight: bold;
 }
 
-input {
+body > div > div > div > input {
     margin-right: 0.5rem;
 }
 
@@ -149,4 +151,29 @@ footer img {
 
 a:hover {
     cursor: pointer;
+}
+
+form {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--button-color);
+    width: 20rem;
+}
+
+input[type='submit'] {
+    background-color: var(--color-primary);
+    border: none;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: bold;
 }
